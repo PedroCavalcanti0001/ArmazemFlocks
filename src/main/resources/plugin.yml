@@ -1,0 +1,8 @@
+name: ArmazemFlocks
+version: SNAPSHOT-1.0
+main: me.zkingofkill.armazem.Main
+description: Plugin de armazem.
+author: zKingOfKill
+
+commands:
+  armazem:

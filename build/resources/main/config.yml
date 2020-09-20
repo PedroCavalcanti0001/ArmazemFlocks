@@ -1,0 +1,49 @@
+#Permissão para vender todos: armazemplots.vendertodos
+#Permissão para abrir qualquer armazem: armazemplots.staff
+
+mysql:
+  password: ''
+  host: 'localhost'
+  database: 'test'
+  port: 3306
+  user: 'root'
+  table: 'ArmazemFlocks_Itens'
+
+drops:
+  '0':
+    item: '296'
+    price: 15.0
+    position:
+      row: 1
+      collunm: 1
+
+guis:
+  warehouse:
+    title: "[Armazem]"
+    rows: 3
+    buttons:
+      sellAll:
+        item:
+          id: 1
+          date: 0
+          name: "&cVender todos"
+          lore:
+            - " "
+            - "&aQuantidade total: &6%amount%"
+            - "&aValor total: &6%total%"
+            - "&aClique para vender todos"
+            - "&aOs itens."
+        position:
+          row: 1
+          colunm: 8
+
+
+messages:
+  noItemsToSell: "&cVocê não tem itens no inventário para vender!"
+  noPermission: "&cSem permissão para usar isso."
+  dropSold: "&a%amount%x drops de %itemName% vendidos com sucesso por %total%!"
+  dropsSold: "&6Todos os seus &a%amount% &6drops vendidos por &a%total%&6!"
+  friendAdded: "&aAmigo %name% adicionado com sucesso!, use /armazem rem <nome> para remover."
+  friendRem: "&aAmigo %name% removido com sucesso!"
+  playerNotFound: "&cJogador não encontrado!"
+  friendNotFound: "&cVocê não tem esse amigo adicionado!"
